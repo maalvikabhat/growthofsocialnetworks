@@ -21,10 +21,17 @@ Wikipedia growth can be described by local rules such as the preferential attach
 - Improving the Robustness of Online Social Networks: A Simulation Approach of Network Interventions 
 https://doi.org/10.3389/frobt.2020.00057 
 This paper explores methods of controlling how robust an online social network is. 
-They define robustness as the average coreness of each node, or how much effect removing that node would have on the system. Our end goal in the experiment is to identify coreness of different nodes (words) in the Wikipedia ecosystem.
+They define robustness as the average coreness of each node, or how much effect removing that node would have on the system. 
 Their model incorporates benefit and cost functions to model whether a node will remain in the network. Their analysis explores ways to keep users in the network. 
 They conclude that keeping a few core nodes in the network is more effective than keeping many outer nodes in the network at improving the robustness of the network. 
 
 ### Experiment Plan
 
-We plan to implement k-core analysis in our initial experiment to help identify small interlinked core areas on a network. 
+We plan to implement k-core analysis in our initial experiment to help identify small interlinked core areas on a network. Additionally, we hope to identify a specific growth mechanism. Our final report will also inculde robustness, or the average coreness of each node. We are looking to understand how much effect removing one node would have on the Wikipedia system in its entirety. 
+
+This might look like the following: 
+![image](https://user-images.githubusercontent.com/42943695/135956178-7be28d2a-271f-4671-aac8-302259e1a3d1.png)
+![image](https://user-images.githubusercontent.com/42943695/135956215-19eee954-1169-4363-a9cb-19e8463c47d7.png)
+![image](https://user-images.githubusercontent.com/42943695/135956190-6796ebc6-929d-44a6-9b9c-ffba262a9b7d.png)
+![image](https://user-images.githubusercontent.com/42943695/135956199-d2c1c30f-b044-4708-8633-9c61139cd3d8.png)
+
