@@ -11,7 +11,7 @@ One of the criterias for a good project asks for available data and supporting m
 ### Annotated Bibliography 
 - Social Resilience in Online Communities: the Autopsy of Friendster 
 https://dl.acm.org/doi/10.1145/2512938.2512946
-This paper discusses analysis of social networks using k-core analysis and measurement of resilience. We plan to implement k-core analysis in our initial experiment. 
+This paper discusses analysis of social networks using k-core analysis and measurement of resilience. Coreness is a measure that can help identify tightly interlinked groups within a network. A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
  
 - Preferential attachment in the growth of social networks: the internet encyclopedia Wikipedia 
 https://arxiv.org/pdf/physics/0602026.pdf
@@ -24,3 +24,7 @@ This paper explores methods of controlling how robust an online social network i
 They define robustness as the average coreness of each node, or how much effect removing that node would have on the system. Our end goal in the experiment is to identify coreness of different nodes (words) in the Wikipedia ecosystem.
 Their model incorporates benefit and cost functions to model whether a node will remain in the network. Their analysis explores ways to keep users in the network. 
 They conclude that keeping a few core nodes in the network is more effective than keeping many outer nodes in the network at improving the robustness of the network. 
+
+### Experiment Plan
+
+We plan to implement k-core analysis in our initial experiment to help identify small interlinked core areas on a network. 
