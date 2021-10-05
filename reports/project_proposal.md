@@ -11,7 +11,8 @@ One of the criterias for a good project asks for available data and supporting m
 ### Annotated Bibliography 
 - Social Resilience in Online Communities: the Autopsy of Friendster 
 https://dl.acm.org/doi/10.1145/2512938.2512946
-This paper discusses analysis of social networks using k-core analysis and measurement of resilience. We plan to implement k-core analysis in our initial experiment. From incorporating the k-core analysis in our Wikipedia network, we intend to use the same interpretation as such that if an article does not have more than k linked neighbors, it "declines" due to the lack of traffic. The consequences of shutting down of an article in our Wikipedia network would be an interesting phenomenon to observe and analyze.(We can use k-core on Wikipedia such that if an article doesn't have more than k neighbors, it "declines" so it doesn't get enough traffic so shuts down?) This paper concludes that thek-core analysis enables to quantify social resilience in online social networks, utilizing the CCDF of node coreness.
+This paper discusses analysis of social networks using k-core analysis and measurement of resilience. Coreness is a measure that can help identify tightly interlinked groups within a network. A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
+We plan to implement k-core analysis in our initial experiment. From incorporating the k-core analysis in our Wikipedia network, we intend to use the same interpretation as such that if an article does not have more than k linked neighbors, it "declines" due to the lack of traffic. The consequences of shutting down of an article in our Wikipedia network would be an interesting phenomenon to observe and analyze.(We can use k-core on Wikipedia such that if an article doesn't have more than k neighbors, it "declines" so it doesn't get enough traffic so shuts down?) This paper concludes that thek-core analysis enables to quantify social resilience in online social networks, utilizing the CCDF of node coreness.
  
 - Preferential attachment in the growth of social networks: the internet encyclopedia Wikipedia 
 https://arxiv.org/pdf/physics/0602026.pdf
@@ -25,6 +26,17 @@ This paper explores methods of controlling how robust an online social network i
 They define robustness as the average coreness of each node, or how much effect removing that node would have on the system. Our end goal in the experiment is to identify coreness of different nodes (words) in the Wikipedia ecosystem.
 Their model incorporates benefit and cost functions to model whether a node will remain in the network. Their analysis explores ways to keep users in the network. 
 They conclude that keeping a few core nodes in the network is more effective than keeping many outer nodes in the network at improving the robustness of the network. 
+
+### Experiment Plan
+
+We plan to implement k-core analysis in our initial experiment to help identify small interlinked core areas on a network. Additionally, we hope to identify a specific growth mechanism. Our final report will also inculde robustness, or the average coreness of each node. We are looking to understand how much effect removing one node would have on the Wikipedia system in its entirety. 
+
+#### This might look like the following: 
+
+![image](https://user-images.githubusercontent.com/42943695/135956178-7be28d2a-271f-4671-aac8-302259e1a3d1.png)
+![image](https://user-images.githubusercontent.com/42943695/135956215-19eee954-1169-4363-a9cb-19e8463c47d7.png)
+![image](https://user-images.githubusercontent.com/42943695/135956190-6796ebc6-929d-44a6-9b9c-ffba262a9b7d.png)
+![image](https://user-images.githubusercontent.com/42943695/135956199-d2c1c30f-b044-4708-8633-9c61139cd3d8.png)
 
 ### Next Steps
 The immediate individual goals in front of us is to thoroughly go over the three annotated bibliography on our own first so that we start off with some level of understanding and come up with questions for discussion (e.g. what components to implement to our model). For our group goal for the first week, we aim to implement the BA model with preferential attachment with (hopefully) the Wikipedia dataset and get it working. Even better, we would have made little explorations of incorporating parts from the two other papers.
