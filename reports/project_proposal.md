@@ -29,7 +29,8 @@ They conclude that keeping a few core nodes in the network is more effective tha
 
 We plan to implement k-core analysis in our initial experiment to help identify small interlinked core areas on a network. Additionally, we hope to identify a specific growth mechanism. Our final report will also inculde robustness, or the average coreness of each node. We are looking to understand how much effect removing one node would have on the Wikipedia system in its entirety. 
 
-This might look like the following: 
+## This might look like the following: 
+
 ![image](https://user-images.githubusercontent.com/42943695/135956178-7be28d2a-271f-4671-aac8-302259e1a3d1.png)
 ![image](https://user-images.githubusercontent.com/42943695/135956215-19eee954-1169-4363-a9cb-19e8463c47d7.png)
 ![image](https://user-images.githubusercontent.com/42943695/135956190-6796ebc6-929d-44a6-9b9c-ffba262a9b7d.png)
