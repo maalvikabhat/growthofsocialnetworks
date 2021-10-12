@@ -9,6 +9,10 @@ Additionally, we hope to identify how core certain words are to the network, whi
 One of the criterias for a good project asks for available data and supporting materials. However, the Wikipedia network dataset that we plan on using is a big dataset that has a high probability of taking a long time for processing. If we were to scale the dataset down by getting rid of a portion of the nodes and the connections between them, we would be losing the integrity of the results from analyzing the experiments on the Wikipedia network. Therefore, we plan on using the Facebook network dataset (which is smaller in scale compared to the Wikipedia network dataset) in case the processing takes too long. 
 
 ### Annotated Bibliography 
+
+-A Generative Algorithm for Modeling Social Networks with Trait Spaces
+- https://cdr.lib.unc.edu/concern/honors_theses/j6731806k
+
 - Social Resilience in Online Communities: the Autopsy of Friendster 
 https://dl.acm.org/doi/10.1145/2512938.2512946
 This paper discusses analysis of social networks using k-core analysis and measurement of resilience. Coreness is a measure that can help identify tightly interlinked groups within a network. A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
