@@ -10,9 +10,6 @@ One of the criterias for a good project asks for available data and supporting m
 
 ### Annotated Bibliography 
 
--A Generative Algorithm for Modeling Social Networks with Trait Spaces
-- https://cdr.lib.unc.edu/concern/honors_theses/j6731806k
-
 - Social Resilience in Online Communities: the Autopsy of Friendster 
 https://dl.acm.org/doi/10.1145/2512938.2512946
 This paper discusses analysis of social networks using k-core analysis and measurement of resilience. Coreness is a measure that can help identify tightly interlinked groups within a network. A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
