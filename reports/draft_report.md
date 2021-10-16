@@ -1,4 +1,4 @@
-# # Visualizing the Growth of Social Networks
+## Visualizing the Growth of Social Networks
 #### Maalvika Bhat, Hyunkyung Rho
 
 ### Abstract
@@ -28,6 +28,7 @@ A k-core is a maximal group of entities, all of which are connected to at least 
 
 ### Weaknesses of the Model 
 A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. 
+If we were to redo this project, we would try to replicate the algorithm on several different datasets to see if we could identify repeated patters between social networks and other networks. 
 
 ### Annotated Bibliography 
 
