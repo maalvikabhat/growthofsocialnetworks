@@ -2,8 +2,8 @@
 #### Maalvika Bhat, Hyunkyung Rho
 
 ### Abstract
-To understand how social networks, like Facebook, act differently than networks like Wikipedia in graph generation, we compared Barabasi-Albert algorithms for both sample datasets. 
-
+To understand how social networks, like Facebook, act differently than networks like Wikipedia in graph generation, we compared algorithms for both sample datasets. We implemented a method for reliable generation of random networks that model known social networks and compared them to graph generation in other networks. Our algorithm is loosely based on the Barabasi-Albert algorithm for scale-free graph generation. However, our model includes additional parameters that play key roles in social networks, including a means of assigning attributes to individuals in the network, which allows for the exploration of networks in which there is a certain degree of
+diversity. We have only implemented undirected versions of the algorithm, and have examined how the algorithm compares to other networks, like Wikipedia. Additionally, we discuss extensions of the model that could further enrich its modeling capabilities. 
 
 ### Process
 In this project, we began by modeling Facebook data in an undirected Strickland algorithm. 
