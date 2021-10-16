@@ -2,7 +2,7 @@
 #### Maalvika Bhat, Hyunkyung Rho
 
 ### Abstract
-
+To understand how social networks, like Facebook, act differently than networks like Wikipedia in graph generation, we compared Barabasi-Albert algorithms for both sample datasets. 
 
 
 ### Process
@@ -27,6 +27,7 @@ Lastly, we performed k-core analysis on the Wikipedia dataset. Coreness is a mea
 A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
 
 ### Weaknesses of the Model 
+A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. 
 
 ### Annotated Bibliography 
 
