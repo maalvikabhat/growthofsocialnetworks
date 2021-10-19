@@ -1,11 +1,11 @@
-## Visualizing the Growth of Social Networks
+## Graph Generation in Social Networks vs. Other Networks
 #### Maalvika Bhat, Hyunkyung Rho
 
 ### Abstract
 To understand how social networks, like Facebook, act differently than networks like Wikipedia in graph generation, we compared algorithms for both sample datasets. We implemented a method for reliable generation of random networks that model known social networks and compared them to graph generation in other networks. Our algorithm is loosely based on the Barabasi-Albert algorithm for scale-free graph generation. However, our model includes additional parameters that play key roles in social networks, including a means of assigning attributes to individuals in the network, which allows for the exploration of networks in which there is a certain degree of
 diversity. We have only implemented undirected versions of the algorithm, and have examined how the algorithm compares to other networks, like Wikipedia. Additionally, we discuss extensions of the model that could further enrich its modeling capabilities. 
 
-### Process
+### Experiment
 In this project, we began by modeling Facebook data in an undirected Strickland algorithm. 
 The undirected Strickland algorithm produces an undirected graph built iteratively node by node. It requires the following parameters: 
 n — the desired final size of the network.
@@ -26,7 +26,11 @@ This was our extension of the initial experiment.
 Lastly, we performed k-core analysis on the Wikipedia dataset. Coreness is a measure that can help identify tightly interlinked groups within a network. 
 A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
 
-### Weaknesses of the Model 
+### Results
+
+### Interpretation
+
+### Concerns
 A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. 
 If we were to redo this project, we would try to replicate the algorithm on several different datasets to see if we could identify repeated patters between social networks and other networks. 
 
@@ -53,3 +57,4 @@ https://doi.org/10.3389/frobt.2020.00057
 This paper explores methods of controlling how robust an online social network is. They define robustness as the average coreness of each node, or how much effect removing that node would have on the system. Our end goal in the experiment is to identify coreness of different nodes (words) in the Wikipedia ecosystem. Their model incorporates benefit and cost functions to model whether a node will remain in the network. Their analysis explores ways to keep users in the network. They conclude that keeping a few core nodes in the network is more effective than keeping many outer nodes in the network at improving the robustness of the network. 
 
 
+### Next Steps
