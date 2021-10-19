@@ -19,8 +19,7 @@ the model is covered.
 1. a seed network of size m0 is generated via the Erdos-Renyi algorithm.
 2. a new node x is added to the network repeated recursively until the network reaches size n.
 
-Then, we repeated this experiment with Wikipedia data. Facebook is a social network, while Wikipedia is not. 
-We compared the two outcomes of running the algorithm with different data sets to see how social networks and other network graphs act differently.
+Then, we repeated this experiment with Wikipedia data. The Facebook network might seem to have the very similar traits as the Wikipedia network, but they differ. Facebook is a social network, while Wikipedia is not. In context, BA model's preferential attachment is based on how popular a person or an article is. With the addition of an extra feature, F-traits, to the process of preferential attachment, we believe that we can create a more realistic scenario for each of the models. A person or an article that is heavily connected to other nodes may not have any overlapping similarities as a new node, which is the concern that the addition of F-traits takes care of. Therefore, we compared the two outcomes of running the algorithm with different data sets to see how social networks and other network graphs act differently.
 This was our extension of the initial experiment. 
 
 Lastly, we performed k-core analysis on the Wikipedia dataset. Coreness is a measure that can help identify tightly interlinked groups within a network. 
