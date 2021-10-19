@@ -27,6 +27,13 @@ Lastly, we performed k-core analysis on the Wikipedia dataset. Coreness is a mea
 A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
 
 ### Results & Interpretation
+The generative algorithm, or the undirected Strickland algorithm, in the (paper's specific name?) paper for modeling social networks with trait spaces is another approach of the preferential attachment in the Barabási-Albert model by incorporating a trait weighting system that was inspired from the Balding-Nichols model. As this project's baseline was a variation and an improvement of the BA model, we expect one of the outcomes to be the comparison between the BA model and our model. We expect the comparisons to be made in terms of looking at how much the models deviate from the actual Facebook network and determining that the generative algorithm in fact does yield a better result that the BA model. 
+Thus, we plan to confirm that the Strickland algorithm produces the same network as the BA model at when the F parameter is set to 0--as F is defined as the variance of traits and 0 variance means that there is no difference between the nodes.
+Another outcome we plan to explore is the difference in the network structure with varying F-values. 
+
+(put in drawing here)
+
+For example, when the F-value is equal or close to 0, we expect the certain nodes to have most of the edges and the rest to have a small number of edges. Versus when the F-value is equal or close to 1, we expect the edges to be relatively evenly distributed throughout the graph as everyone is substantially different from one another and therefore the significance of preferential attachment drops. 
 
 ### Potential Causes for Concern
 A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. 
