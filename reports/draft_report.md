@@ -32,8 +32,7 @@ If we were to redo this project, we would try to replicate the algorithm on seve
 
 ### Annotated Bibliography 
 
--A Generative Algorithm for Modeling Social Networks with Trait Spaces
-- https://cdr.lib.unc.edu/concern/honors_theses/j6731806k
+- A Generative Algorithm for Modeling Social Networks with Trait Spaces https://cdr.lib.unc.edu/concern/honors_theses/j6731806k
 The algorithm in this paper is loosely based on the Barabasi-Albert algorithm for scale-free graph generation. 
 However, this model includes some additional parameters that play key roles in social networks, including a means of assigning attributes to individuals in the network.
 The algorithm is intuitive in its implementation and easily adaptable to a variety of situations. 
