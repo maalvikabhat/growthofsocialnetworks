@@ -58,3 +58,4 @@ This paper explores methods of controlling how robust an online social network i
 
 
 ### Next Steps
+We will work on debugging our code to produce the results we're hoping to see. Once our Facebook data is accurately modeled, we will replicate the algorithm using our Wikipedia data. Then, we will compare the BA graphs produced by both datasets. Additionally, we hope to perform k-core analysis on the Wikipedia dataset. This will allow us to identify tightly interlinked groups within the Wikipedia network. 
