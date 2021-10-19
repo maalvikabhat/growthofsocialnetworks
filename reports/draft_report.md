@@ -26,9 +26,7 @@ This was our extension of the initial experiment.
 Lastly, we performed k-core analysis on the Wikipedia dataset. Coreness is a measure that can help identify tightly interlinked groups within a network. 
 A k-core is a maximal group of entities, all of which are connected to at least k other entities in the group. 
 
-### Results
-
-### Interpretation
+### Results & Interpretation
 
 ### Concerns
 A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. 
