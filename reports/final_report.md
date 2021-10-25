@@ -34,14 +34,14 @@ Another outcome we plan to explore is the difference in the network structure wi
 ![image](https://www.researchgate.net/profile/Guilherme-Ferraz-De-Arruda/publication/324745118/figure/fig2/AS:619148942012418@1524628019444/An-example-of-clustering-coefficient-Three-network-configurations-that-result-in.png)
 *https://www.researchgate.net/figure/An-example-of-clustering-coefficient-Three-network-configurations-that-result-in_fig2_324745118*
 
-Although the above picture is an abstract version of one of the results we plan to output, it encapsulates the idea of what we are going to look for between networks of different F-values. For example, when the F-value is equal or close to 0, we expect the certain nodes to have most of the edges and the rest to have a small number of edges. Versus when the F-value is equal or close to 1, we expect the edges to be relatively evenly distributed throughout the graph as everyone is substantially different from one another and therefore the importance of preferential attachment drops. 
+When the F-value is equal or close to 0, we expect the certain nodes to have most of the edges and the rest to have a small number of edges. Versus when the F-value is equal or close to 1, we expect the edges to be relatively evenly distributed throughout the graph as everyone is substantially different from one another and therefore the importance of preferential attachment drops. 
 
 ![image](https://www.researchgate.net/profile/Daniela-Ushizima/publication/241808807/figure/fig4/AS:298711151333383@1448229696584/Example-of-model-based-clustering-to-clouds-of-points-a-two-Gaussian-distributions.png)
 *https://www.researchgate.net/figure/Example-of-model-based-clustering-to-clouds-of-points-a-two-Gaussian-distributions_fig4_241808807*
 
 When varying the parameters such as F (the variance in traits) or P (the skewness of the beta function), we expect to observe the accuracy of our model in comparison to the actual Facebook network. Like the above, we will have a visual representation of how the actual Facebook network will look like, an iteration through F-values and plot the resulting parameters, and plot the model with the most optimal parameter values.
 
-### Potential Causes for Concern
+### Concerns
 A large part of our project was implementing a model we read about in "A Generative Algorithm for Modeling Social Networks with Trait Spaces." This meant, first, we had to make sense of dozens of equations, algorithms, implementations, and thought processes. To extend this model meant filling in gaps in scientific understanding with our own knowledge. While we tried our best to do so, there might be pieces missing in creating the most accurate and precise model possible. As an example, the paper that outlines the Strickland algorithm mentions a variable *p*, a skew term that pushes the trait beta distribution left or right. However, the paper does not mention how they decided the p-values and when they chose to tweak their p-values in the algorithm; therefore, this part is left to our own exploration and testing. If we were to redo this project, we would try to replicate the algorithm on several different datasets to see if we could identify repeated patters between social networks and other networks. 
 
 ### Annotated Bibliography 
