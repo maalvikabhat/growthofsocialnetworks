@@ -26,6 +26,12 @@ The generative algorithm, or the undirected Strickland algorithm, in *A Generati
 
 We thus compare the representation of the Wikipedia dataset by the BA model and our Strickland model as well. 
 
+![fbpmf](https://github.com/maalvikabhat/growthofsocialnetworks/blob/main/fb_strickland_plot.png)
+
+![wikipmf](https://github.com/maalvikabhat/growthofsocialnetworks/blob/main/wiki_strickland_plot%20(1).png)
+
+![fbwikicomparison](https://github.com/maalvikabhat/growthofsocialnetworks/blob/main/pmf_wiki_fb%20(1).png)
+
 ### Concerns
 A large part the roadblocks of our project were: wrangling with the insanely large Wikipedia dataset, and implementing the preferential attachment with the trait weighting system. This meant that first, we had to create a data processor that would cut down the size of the Wikipedia dataset so that it can be processed in a reasonable time and not clutter Colab's RAM while maintaining the integrity of the network. We slimmed the Wikipedia dataset to have X nodes, Y edges from the original dataset's size of 1791489 nodes and 28511807 edges.
 
