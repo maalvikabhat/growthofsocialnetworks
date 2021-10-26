@@ -2,24 +2,25 @@
 #### Maalvika Bhat, Hyunkyung Rho
 
 ### Abstract
-To understand how social networks, like Facebook, act differently than networks like Wikipedia in graph generation, we compared algorithms for both sample datasets. We implemented a method for reliable generation of random networks that model known social networks and compared them to graph generation in other networks. Our algorithm is loosely based on the Barabasi-Albert algorithm for scale-free graph generation. However, our model includes additional parameters that play key roles in social networks, including a means of assigning attributes to individuals in the network, which allows for the exploration of networks in which there is a certain degree of
+To understand how social networks like Facebook act differently than non-social networks like Wikipedia in graph generation, we generated each network using the undirected Strickland algorithm and compared them. The Strickland algorithm combines a trait weighting system from the Balding-Nichols model to preferential attachment from the Barabási-Albert model make the resulting model more realistic. 
+We implemented a method for reliable generation of random networks that model known social networks and compared them to graph generation in other networks. Our algorithm is loosely based on the Barabasi-Albert algorithm for scale-free graph generation. However, our model includes additional parameters that play key roles in social networks, including a means of assigning attributes to individuals in the network, which allows for the exploration of networks in which there is a certain degree of
 diversity. We have only implemented undirected versions of the algorithm, and have examined how the algorithm compares to other networks, like Wikipedia. Additionally, we discuss extensions of the model that could further enrich its modeling capabilities. 
 
+### Motivation Behind Algorithm
+The Strickland algorithm is motivated from the shortcoming that results from Erdos-Renyi, Barabasi-Albert, and Watts-Strogatz models assuming that there are no distinctions between the nodes except for the degree. To produce a model that better reflects how the nodes are in reality, the Strickland algorithm incorporates differences between the nodes when building the network by creating a continuous trait space, which is the space of possible differences between people. Here, a continuous trait space is used over a discrete trait space as it is unrealistic to categorize nodes--which would be people for the Facebook network and articles for the Wikipedia network--and to even count the different categories there may be. Each node is randomly assigned a particular F-trait which is used to determine the likelihood that some node *x* is a member of another node *y*'s community.  
+
 ### Experiment
-In this project, we began by modeling Facebook data in an undirected Strickland algorithm. 
-The undirected Strickland algorithm produces an undirected graph built iteratively node by node. It requires the following parameters: 
+We begin by modeling Facebook data with an undirected Strickland algorithm. The algorithm produces an undirected graph that starts with a given initial size of an Erdos-Renyi model. The algorithm then builds node by node to the base model using a combination of preferential attachment and trait weighting system.
+
+The following parameters are required: 
 n — the desired final size of the network.
 m0 — the size of the initial seed network.
 F — the desired Global F which defined the variance of the traits.
 P — a skew term, which pushes the trait beta distribution left or right. P is a value between 0 and 1
 and represents the mean trait of the network.
 m — the number of connections each new node should make.
-The steps of the algorithm are enumerated below. The logic and meaning of the steps are explained after
-the model is covered.
-1. a seed network of size m0 is generated via the Erdos-Renyi algorithm.
-2. a new node x is added to the network repeated recursively until the network reaches size n.
 
-Then, we repeated this experiment with Wikipedia data using the undirected Strickland algorithm. The Facebook network might seem to have the very similar traits as the Wikipedia network, but they differ. Facebook is a social network, while Wikipedia is not. In context, BA model's preferential attachment is based on how popular a person or an article is. With the addition of an extra feature, F-traits, to the process of preferential attachment, we believe that we can create a more realistic scenario for each of the models. A person or an article that is heavily connected to other nodes may not have any overlapping similarities as a new node, which is the concern that the addition of F-traits takes care of. Therefore, we compared the two outcomes of running the algorithm with different data sets to see how social networks and other network graphs act differently.
+Then, we repeated this experiment with Wikipedia dataset using the undirected Strickland algorithm. The Facebook network might seem to have the very similar traits as the Wikipedia network, but they differ. Facebook is a social network, while Wikipedia is not. In context, BA model's preferential attachment is based on how popular a person or an article is. With the addition of an extra feature, F-traits, to the process of preferential attachment, we a more realistic scenario for each of the models are created. A person or an article that is heavily connected to other nodes may not have any overlapping similarities as a new node, which is the concern that the addition of F-traits takes care of. Therefore, we compared the two outcomes of running the algorithm with different data sets to see how social networks and other network graphs act differently.
 This was our extension of the initial experiment. 
 
 ### Results & Interpretation
@@ -27,7 +28,7 @@ The generative algorithm, or the undirected Strickland algorithm, in *A Generati
 Thus, we plan to confirm that the Strickland algorithm produces the same network as the BA model at when the F parameter is set to 0--as F is defined as the variance of traits and 0 variance means that there is no difference between the nodes.
 Another outcome we plan to explore is the difference in the network structure with varying F-values. 
 
-![image](https://www.researchgate.net/profile/Guilherme-Ferraz-De-Arruda/publication/324745118/figure/fig2/AS:619148942012418@1524628019444/An-example-of-clustering-coefficient-Three-network-configurations-that-result-in.png)
+![image]() <----- PUT RESULTING IMAGE HERE
 *https://www.researchgate.net/figure/An-example-of-clustering-coefficient-Three-network-configurations-that-result-in_fig2_324745118*
 
 When the F-value is equal or close to 0, we expect the certain nodes to have most of the edges and the rest to have a small number of edges. Versus when the F-value is equal or close to 1, we expect the edges to be relatively evenly distributed throughout the graph as everyone is substantially different from one another and therefore the importance of preferential attachment drops. 
