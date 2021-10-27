@@ -1,6 +1,8 @@
 ## Graph Generation with Trait Weighting System in Social Networks vs. Non-Social Networks
 #### Maalvika Bhat, Hyunkyung Rho
 
+Link to the Colab Notebook: https://colab.research.google.com/drive/1txt6TTI7uh34hdpZmIDjNbB8YJFsKQlJ?usp=sharing
+
 ### Abstract
 To understand how social networks like Facebook act differently than non-social networks like Wikipedia in graph generation, we generated each network using the undirected Strickland algorithm and compared them. The Strickland algorithm combines a trait weighting system from the Balding-Nichols model to preferential attachment from the Barabási-Albert model to make the resulting model more realistic. The addition of the trait weighting system incorporates the notion of the differences between people, and that people of similar traits are more likely to belong in the same community. This is implemented by assigning attributes to individuals in the network, which allows for the generation of the network with an extra area of diversity. Our model only contains the undirected version of the algorithm as both Facebook and Wikipedia networks do not have directionality. Additionally, we discuss extensions of the model that could further enrich its modeling capabilities. 
 
