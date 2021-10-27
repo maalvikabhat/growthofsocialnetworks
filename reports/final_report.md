@@ -43,7 +43,7 @@ A large part the roadblocks of our project were: wrangling with the insanely lar
 
 Second, we had to make sense of the equations used and the motivation for deciding to use them. To extend this model meant filling in gaps in scientific understanding with our knowledge. One example of this area was the usage of the beta distribution to assign F-traits, and the decision behind choosing a beta distribution over other functions that randomly generates a value between 0 and 1. Another example is that the paper mentions a variable *p*, a skew term that pushes the trait beta distribution left or right. However, the paper does not mention how they decided the p-values and when they chose to tweak their p-values in the algorithm; therefore, this part is left to our exploration and testing. While we tried our best to replicate the model, there are incongruent pieces from our model and the model described in the paper. 
 
-Finally, we know that the results we produced are not what we were initially expecting. After reading the paper, we had an idea of how our results would look similar, but even with our best replication of the model, we were unable to. 
+Finally, we know that the results we produced are not what we were initially expecting. After reading the paper, we had an idea of how our results would look based on theirs. Their results seemed to produce much clearer linear correlations, while ours didn't. While we weren't terribly far off, we were hoping for a closer replication. 
 
 ### Annotated Bibliography 
 
